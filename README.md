@@ -1,7 +1,8 @@
 # calc
 Basic calculator on Typescript  
 
-Compilator command:
+Команда компилятора:
 tsc -m "es2015"
 
-Запускать в браузере index.html
+Запускать в браузере 
+index.html
