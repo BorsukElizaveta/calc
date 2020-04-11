@@ -1,27 +1,25 @@
 /**
  * Экран для отображения результата.
  */
-var Display = /** @class */ (function () {
-    function Display(output) {
+export class Display {
+    constructor(output) {
         this.output = output;
     }
     /**
      * Устанавливает значение.
      *
      */
-    Display.prototype.setValue = function (value) {
+    setValue(value) {
         // @ts-ignore
         this.output.textContent = value;
-    };
+    }
     /**
      * Подготавливает число к отображения на экране.
      *
      */
-    Display.prototype.prepare = function (number) {
+    prepare(number) {
         return number.toPrecision(11)
             .replace(/(?:\.0*|(\.\d+?)0*)$/, '$1');
-    };
-    return Display;
-}());
-export { Display };
+    }
+}
 //# sourceMappingURL=Display.js.map

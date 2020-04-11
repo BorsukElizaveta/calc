@@ -12,8 +12,8 @@ var Operation;
 /**
  * Калькулятор.
  */
-var Calculator = /** @class */ (function () {
-    function Calculator(display) {
+export class Calculator {
+    constructor(display) {
         this.display = display;
         this.numberA = 0;
         this.numberB = 0;
@@ -24,17 +24,17 @@ var Calculator = /** @class */ (function () {
     /**
      * Сбрасывает состояние калькулятора.
      */
-    Calculator.prototype.clear = function () {
+    clear() {
         this.operation = Operation.NONE;
         this.numberA = 0;
         this.numberB = NaN;
         this.value = '';
         this.display.setValue('0');
-    };
+    }
     /**
      * Удаляет последний символ.
      */
-    Calculator.prototype.backspace = function () {
+    backspace() {
         this.value = this.value.slice(0, -1);
         if (this.value.length === 0) {
             this.display.setValue('0');
@@ -42,12 +42,12 @@ var Calculator = /** @class */ (function () {
         else {
             this.display.setValue(this.value);
         }
-    };
+    }
     /**
      * Обновляет отображаемое значение.
      */
-    Calculator.prototype.updateDisplay = function () {
-        var numberToDisplay;
+    updateDisplay() {
+        let numberToDisplay;
         if (isNaN(this.numberA)) {
             numberToDisplay = 0;
         }
@@ -58,13 +58,13 @@ var Calculator = /** @class */ (function () {
             numberToDisplay = this.numberB;
         }
         this.display.setValue(this.display.prepare(numberToDisplay));
-    };
+    }
     /**
      * Выполняет вычисление текущего значения, если необходимо.
      */
-    Calculator.prototype.calculate = function () {
-        var numberA = this.numberA;
-        var numberB = this.numberB;
+    calculate() {
+        let numberA = this.numberA;
+        const numberB = this.numberB;
         if (isNaN(numberA)
             || isNaN(numberB)) {
             this.value = '';
@@ -93,10 +93,10 @@ var Calculator = /** @class */ (function () {
         this.operation = Operation.NONE;
         this.value = '';
         this.updateDisplay();
-    };
-    Calculator.prototype.addDigit = function (value) {
+    }
+    addDigit(value) {
         if (!/^\d$/.test(value)) {
-            throw new Error("Incorrect number value \"" + value + "\".");
+            throw new Error(`Incorrect number value "${value}".`);
         }
         if (!this.value
             && (this.operation === Operation.NONE)) {
@@ -115,22 +115,22 @@ var Calculator = /** @class */ (function () {
         else {
             this.numberB = Number(this.value);
         }
-    };
+    }
     /**
      * Ставит десятичный разделитель.
      */
-    Calculator.prototype.period = function () {
+    period() {
         if (this.value.indexOf('.') === -1) {
             this.value += ((this.value.length === 0)
                 ? '0.'
                 : '.');
             this.display.setValue(this.value);
         }
-    };
+    }
     /**
      * Изменяет знак числа.
      */
-    Calculator.prototype.changeSign = function () {
+    changeSign() {
         if (!this.value
             && this.numberA) {
             this.value = this.numberA.toString();
@@ -151,44 +151,42 @@ var Calculator = /** @class */ (function () {
         else {
             this.numberB = Number(this.value);
         }
-    };
+    }
     /**
      * Вычисляет квадратный корень.
      */
-    Calculator.prototype.squareRoot = function () {
+    squareRoot() {
         this.calculate();
         this.numberA = Math.sqrt(this.numberA);
         this.updateDisplay();
-    };
+    }
     /**
      * Выполняет сложение.
      */
-    Calculator.prototype.addition = function () {
+    addition() {
         this.calculate();
         this.operation = Operation.ADDITION;
-    };
+    }
     /**
      * Выполняет вычитание.
      */
-    Calculator.prototype.subtraction = function () {
+    subtraction() {
         this.calculate();
         this.operation = Operation.SUBTRACTION;
-    };
+    }
     /**
      * Выполняет умножение.
      */
-    Calculator.prototype.multiplication = function () {
+    multiplication() {
         this.calculate();
         this.operation = Operation.MULTIPLICATION;
-    };
+    }
     /**
      * Выполняет деление.
      */
-    Calculator.prototype.division = function () {
+    division() {
         this.calculate();
         this.operation = Operation.DIVISION;
-    };
-    return Calculator;
-}());
-export { Calculator };
+    }
+}
 //# sourceMappingURL=Calculator.js.map

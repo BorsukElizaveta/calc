@@ -1,28 +1,26 @@
 /**
  * Элементы управления калькулятором.
  */
-var Controls = /** @class */ (function () {
+export class Controls {
     /**
      * Элементы управления калькулятором.
      */
-    function Controls(calculator, buttons) {
-        var _this = this;
+    constructor(calculator, buttons) {
         /** @type {Calculator} */
         this.calculator = calculator;
-        var onButtonClick = function (event) {
-            var target = (event.target);
-            var action = target.dataset.action;
-            var value = target.dataset.value;
+        const onButtonClick = (event) => {
+            const target = (event.target);
+            const action = target.dataset.action;
+            const value = target.dataset.value;
             console.log('click');
-            _this.doAction(action, value);
+            this.doAction(action, value);
         };
         // @ts-ignore
-        for (var _i = 0, buttons_1 = buttons; _i < buttons_1.length; _i++) {
-            var button = buttons_1[_i];
+        for (const button of buttons) {
             button.addEventListener('click', onButtonClick);
         }
     }
-    Controls.prototype.doAction = function (action, value) {
+    doAction(action, value) {
         switch (action) {
             case 'addition':
                 this.calculator.addition();
@@ -67,8 +65,6 @@ var Controls = /** @class */ (function () {
             default:
                 throw new Error('Unknown action');
         }
-    };
-    return Controls;
-}());
-export { Controls };
+    }
+}
 //# sourceMappingURL=Controls.js.map

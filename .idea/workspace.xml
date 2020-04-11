@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81cc9784-65a4-4aae-acb2-9d4879dd8240" name="Default Changelist" comment="" />
+    <list default="true" id="81cc9784-65a4-4aae-acb2-9d4879dd8240" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Calculator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Calculator.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Calculator.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Controls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Controls.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Controls.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Display.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Display.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Display.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Display.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,17 +30,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aBYBsRbNJguS1Y07UuxahlHBJN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="SvnConfiguration">
@@ -41,34 +59,42 @@
       <updated>1586210322057</updated>
       <workItem from="1586210327794" duration="3087000" />
       <workItem from="1586288037088" duration="6865000" />
-      <workItem from="1586345937639" duration="10883000" />
+      <workItem from="1586345937639" duration="12881000" />
+      <workItem from="1586627189125" duration="423000" />
+      <workItem from="1586627715094" duration="104000" />
+      <workItem from="1586629151847" duration="156000" />
+      <workItem from="1586638352814" duration="312000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/scripts/Display.js.map" />
         <option value="$PROJECT_DIR$/scripts/Display.js" />
-        <option value="$PROJECT_DIR$/scripts/Calculator.js.map" />
-        <option value="$PROJECT_DIR$/scripts/Calculator.js" />
+        <option value="$PROJECT_DIR$/scripts/index.js.map" />
         <option value="$PROJECT_DIR$/scripts/index.js" />
         <option value="$PROJECT_DIR$/scripts/Controls.js.map" />
         <option value="$PROJECT_DIR$/scripts/Controls.js" />
-        <option value="$PROJECT_DIR$/scripts/index.js.map" />
+        <option value="$PROJECT_DIR$/scripts/Calculator.js.map" />
+        <option value="$PROJECT_DIR$/scripts/Calculator.js" />
       </list>
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="401" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586627458071">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="401" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.920@0.0.1440.920" timestamp="1586627458071" />
     <state x="436" y="142" key="#index.js" timestamp="1586210690934">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="436" y="142" key="#index.js/0.0.1440.920@0.0.1440.920" timestamp="1586210690934" />
-    <state x="222" y="103" key="SettingsEditor" timestamp="1586250728640">
+    <state x="222" y="103" key="SettingsEditor" timestamp="1586627798842">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="222" y="103" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1586250728640" />
+    <state x="222" y="103" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1586627798842" />
     <state x="377" y="211" width="672" height="677" key="run.anything.popup" timestamp="1586351636330">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
